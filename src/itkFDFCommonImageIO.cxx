@@ -51,6 +51,8 @@ Tokenize(const std::string & str, std::vector<std::string> & tokens, const std::
 std::string
 ParseLine(std::string line)
 {
+
+  std::cout << "ParseLine(" << line << ")" << std::endl;
   // strip *
   line = RemoveCharacters(line, '*');
   line = RemoveCharacters(line, '\"');
